@@ -34,7 +34,6 @@ def gameScreen(stdscr):
     stdscr.clear()
 
     correctWord = random.choice(open("words.txt").read().splitlines())
-    stdscr.addstr(f"TEST: The word is {correctWord}\n")  # for Debugging
 
     congrats = ["YOU WIN\n", f"THE WORD WAS {correctWord}\n"]
     fail = ["OUT OF LIVES\n", f"THE WORD WAS {correctWord}\n"]
